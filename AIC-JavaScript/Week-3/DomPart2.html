@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>one</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+    <Script>
+      let title=document.createElement("h1")
+      title.className="Sweeti"
+      title.style.fontSize="25px"
+        title.textContent="Alpha Intern"
+        console.log(title)
+        document.body.appendChild(title)
+        let ul=document.querySelector("ul")
+        console.log(ul)
+        let li=document.querySelectorAll("li")
+        console.log(li)
+        for(list of li){
+            ul.removeChild(list)
+        }
+    </Script>
+</body>
+</html>

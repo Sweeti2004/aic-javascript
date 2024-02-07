@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="js"></p>
+     <button onclick="login()" id="btn">Login</button><!--dblclick -->
+    <script>
+        document.addEventListener("dblclick",greet)//click
+        function greet(){
+            document.getElementById("js").innerText="Good morning Bachho"
+        }
+        function login(){
+            document.getElementById("btn").innerText="Logout"
+            document.getElementById("btn").style.color="red"
+            document.getElementById("btn").style.backgroundColor="green"
+            document.getElementById("btn").style.padding="8px"
+            document.getElementById("btn").style.border="2px solid black"
+            document.getElementById("btn").style.borderRadius="5px"
+        }
+    </script>
+</body>
+</html>

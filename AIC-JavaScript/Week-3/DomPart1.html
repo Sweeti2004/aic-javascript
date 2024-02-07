@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Part 1</title>
+</head>
+<body>
+  <!--  id -->
+    <p id="one">Namastey</p>
+    <!-- class -->
+    <ul>
+        <li class="tech">one</li>
+        <li class="tech">Two</li>
+        <li class="tech">Three</li>
+    </ul>
+    <!-- tagname -->
+    <h4>Hii</h4>
+    <h4>Hello</h4>
+    <h4>Oye</h4>
+    <!-- query -->
+    <h2>hlo</h2>
+    <h2 class="class">hola</h2>
+    <h2 id="id">hey</h2>
+    <script>
+//id
+    let a=document.getElementById("one")
+    console.log(a.innerText)
+    //class
+   let b= document.getElementsByClassName("tech")
+   console.log(b[2].innerText)
+   b[1].innerText="Sweeti"
+   let c=document.getElementsByTagName("h4")
+   console.log(c)
+   console.log(c[2].innerText)
+   c[1].innerText="Good"
+   c[1].style.color="Red"
+  let d= document.querySelector("#id")
+  let e=document.querySelector(".class")
+  e.className="newClass"
+  e.classList="newClass c1 c2 c3"
+  e.setAttribute("title","js")
+   console.log(d.innerText);
+   console.log(e);
+    </script>
+    
+
+</body>
+</html>
